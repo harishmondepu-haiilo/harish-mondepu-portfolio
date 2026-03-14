@@ -5,6 +5,7 @@ import { Canvas } from "@react-three/fiber";
 import { Float, Billboard, Text } from "@react-three/drei";
 import { useEffect, useState, useMemo } from "react";
 import * as THREE from "three";
+import Image from "next/image";
 
 // A simplistic 3D Cloud Particle System mapped to the background
 function CloudParticles() {
@@ -68,6 +69,21 @@ export default function Hero() {
           <ambientLight intensity={0.5} />
           <CloudParticles />
         </Canvas>
+      </div>
+
+      {/* Hero Background Image Banner */}
+      <div className="absolute inset-0 z-[1] opacity-70">
+        <Image
+          src="/salesforce-banner.png"
+          alt="Salesforce Einstein and Agentforce Banner"
+          fill
+          priority
+          className="object-cover object-center"
+          quality={100}
+        />
+        <div className="absolute inset-0 bg-[#0A0F1E]/60 mix-blend-multiply" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-[#0A0F1E] to-transparent" />
+        <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[#0A0F1E] to-transparent" />
       </div>
 
       {/* Content */}
