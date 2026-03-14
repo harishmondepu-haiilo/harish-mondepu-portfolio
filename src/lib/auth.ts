@@ -4,7 +4,7 @@ import bcrypt from "bcryptjs";
 
 // Load default admin credentials from env. In production, these should be properly secured.
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@harish.dev";
-const ADMIN_PASSWORD_HASH = process.env.ADMIN_PASSWORD_HASH || bcrypt.hashSync("admin123", 10);
+const ADMIN_PASSWORD_HASH = process.env.ADMIN_PASSWORD_HASH || bcrypt.hashSync("Laksh@123", 10);
 
 export const authOptions: NextAuthOptions = {
   providers: [
