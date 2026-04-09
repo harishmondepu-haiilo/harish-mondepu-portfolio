@@ -697,7 +697,7 @@ export const ACHIEVEMENTS = [
   },
   {
     "title": "Salesforce Attachments Extraction Tool",
-    "description": "Designed and developed an attachment extraction utility that enables users to retrieve files from targeted objects based on defined filter criteria. The tool organizes the extracted attachments into record-specific directories on the local file system, ensuring structured and easily accessible data storage.",
+    "description": "\"Saved €20,000 by designing and developing an attachment extraction utility that automates file retrieval and organizes attachments into record-specific local directories based on custom filter criteria.\"",
     "company": "Innovation Project "
   }
 ];
