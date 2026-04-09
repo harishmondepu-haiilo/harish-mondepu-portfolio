@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
-import { getSection, updateSection, isValidSection } from "@/lib/content";
+import { getSectionFresh, updateSection, isValidSection } from "@/lib/content";
 
 export async function GET(
   request: NextRequest,
@@ -22,7 +22,7 @@ export async function GET(
   }
 
   try {
-    const data = getSection(section);
+    const data = await getSectionFresh(section);
     return NextResponse.json(data);
   } catch (error) {
     return NextResponse.json(
@@ -52,9 +52,10 @@ export async function PUT(
 
   try {
     const body = await request.json();
-    const updated = updateSection(section, body);
+    const updated = await updateSection(section, body);
     return NextResponse.json({ success: true, data: updated[section] });
   } catch (error) {
+    console.error("[CMS] Update error:", error);
     return NextResponse.json(
       { error: "Failed to update section" },
       { status: 500 }
