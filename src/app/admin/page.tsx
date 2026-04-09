@@ -28,7 +28,7 @@ export default async function AdminDashboard() {
     <div className="max-w-6xl mx-auto py-8">
       <div className="mb-10">
         <h1 className="text-3xl font-bold text-white mb-2">Welcome Back, {session.user?.name || "Admin"}</h1>
-        <p className="text-gray-400">Here is what's happening with your portfolio today.</p>
+        <p className="text-gray-400">Here is what&apos;s happening with your portfolio today.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
