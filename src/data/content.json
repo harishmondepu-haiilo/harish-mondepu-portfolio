@@ -306,6 +306,15 @@
       "logo": "zap",
       "verified": true,
       "highlight": false
+    },
+    {
+      "id": 17,
+      "name": "Google AI Professional",
+      "issuer": "Google",
+      "date": "2026",
+      "logo": "gear",
+      "verified": true,
+      "highlight": true
     }
   ],
   "skills": {
