@@ -1,9 +1,9 @@
 // ============================================================
-//  PORTFOLIO CMS — Auto-generated from content.json
-//  Do not edit directly — use the CMS admin panel
+//  PORTFOLIO CMS — Edit this file to update your portfolio
+//  No code changes needed anywhere else!
 // ============================================================
 
-// ── PERSONAL INFO ──────────────────────────────────────────
+// ── PERSONAL INFO ──────────────────────────────────────────────────────
 export const PERSONAL = {
   "name": "Harish Mondepu",
   "title": "Senior Salesforce Consultant",
@@ -31,7 +31,7 @@ export const PERSONAL = {
   }
 };
 
-// ── EXPERIENCE ─────────────────────────────────────────────
+// ── EXPERIENCE ───────────────────────────────────────────────────────
 export const EXPERIENCES = [
   {
     "id": 1,
@@ -170,7 +170,8 @@ export const EXPERIENCES = [
   }
 ];
 
-// ── CERTIFICATIONS ─────────────────────────────────────────
+// ── CERTIFICATIONS ───────────────────────────────────────────────────
+// Set highlight: true for the featured cert (shows larger)
 export const CERTS = [
   {
     "id": 1,
@@ -315,10 +316,20 @@ export const CERTS = [
     "logo": "⚡",
     "verified": true,
     "highlight": false
+  },
+  {
+    "id": 17,
+    "name": "Google AI Professional",
+    "issuer": "Google",
+    "date": "2026",
+    "logo": "⚙️",
+    "verified": true,
+    "highlight": true
   }
 ];
 
-// ── SKILLS ─────────────────────────────────────────────────
+// ── SKILLS ───────────────────────────────────────────────────────────
+// color uses hex values for inline styles (avoids Tailwind purge issues)
 export const SKILLS_DATA = {
   "Salesforce Ecosystem": [
     {
@@ -470,7 +481,7 @@ export const SKILLS_DATA = {
   ]
 };
 
-// ── PROJECTS ───────────────────────────────────────────────
+// ── PROJECTS ─────────────────────────────────────────────────────────
 export const PROJECTS = [
   {
     "id": 1,
@@ -577,7 +588,7 @@ export const PROJECTS = [
   }
 ];
 
-// ── TESTIMONIALS ───────────────────────────────────────────
+// ── TESTIMONIALS ────────────────────────────────────────────────────
 export const TESTIMONIALS = [
   {
     "id": 1,
@@ -626,7 +637,7 @@ export const TESTIMONIALS = [
   }
 ];
 
-// ── EDUCATION ──────────────────────────────────────────────
+// ── EDUCATION ────────────────────────────────────────────────────────
 export const EDUCATION = [
   {
     "degree": "MBA (IT & Marketing)",
@@ -640,7 +651,7 @@ export const EDUCATION = [
   }
 ];
 
-// ── ACHIEVEMENTS ───────────────────────────────────────────
+// ── ACHIEVEMENTS ──────────────────────────────────────────────────────
 export const ACHIEVEMENTS = [
   {
     "title": "Custom FSL Solution — €40K Saved",
