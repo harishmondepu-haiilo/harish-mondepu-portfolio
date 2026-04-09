@@ -3,629 +3,142 @@
 //  No code changes needed anywhere else!
 // ============================================================
 
-// ── PERSONAL INFO ──────────────────────────────────────────────────────
+// ── PERSONAL INFO ──────────────────────────────────────────
 export const PERSONAL = {
-  "name": "Harish Mondepu",
-  "title": "Senior Salesforce Consultant",
-  "tagline": "Salesforce Engineer & Cloud Architect",
-  "roles": [
-    "Salesforce Consultant",
-    "CRM Solutions Architect",
+  name: "Harish Mondepu",
+  title: "Senior Salesforce Consultant",
+  tagline: "Salesforce Engineer",
+  roles: [
+    "Salesforce Engineer",
+    "CRM Consultant",
     "Platform Developer",
-    "Cloud & Integration Expert"
+    "Cloud Solutions Expert",
   ],
-  "bio": [
-    "With nearly a decade of hands-on Salesforce experience across Healthcare, SaaS, Manufacturing, Financial Services, and High-Tech domains, I architect and deliver end-to-end enterprise solutions that drive measurable business growth and operational efficiency.",
-    "My expertise spans Sales Cloud, Service Cloud, Experience Cloud, Salesforce CPQ, Einstein Analytics, Agentforce, and deep integrations using MuleSoft, REST/SOAP APIs, and middleware platforms — transforming complex business requirements into scalable, secure, and future-ready solutions.",
-    "As a trusted consultant, I bridge the gap between business strategy and technical execution — championing DevOps with Copado, driving AI-powered automation with Einstein & Agentforce, and ensuring every implementation is built for compliance, performance, and long-term scalability."
+  bio: [
+    "With 9+ years of hands-on Salesforce experience, I have delivered complex implementations across Healthcare, Manufacturing, Financial Services, and High-Tech domains.",
+    "My expertise spans Salesforce CPQ, Service Cloud, Experience Cloud, MuleSoft integrations, CRM Analytics, and Lightning Web Component development — turning business requirements into scalable, maintainable solutions.",
+    "Beyond the code, I drive DevOps practices with Copado, leverage AI tools like Einstein and Agentforce, and ensure every solution is built for compliance, performance, and future growth.",
   ],
-  "email": "harimba963@gmail.com",
-  "location": "Bangalore, India | Finland",
-  "linkedin": "https://linkedin.com/in/harish-m-49950b168",
-  "github": "https://github.com/harishmondepu",
-  "trailhead": "https://trailhead.salesforce.com/en/me/harishmondepu",
-  "stats": {
-    "yearsExp": 9,
-    "certifications": 16,
-    "projects": 25
-  }
+  email: "harish.mondepu@gmail.com",
+  location: "Bangalore, India",
+  linkedin: "https://linkedin.com/in/harishmondepu",
+  github: "https://github.com/harishmondepu",
+  trailhead: "https://trailhead.salesforce.com/en/me/harishmondepu",
+  stats: {
+    yearsExp: 9,
+    certifications: 13,
+    projects: 20,
+  },
 };
 
-// ── EXPERIENCE ───────────────────────────────────────────────────────
+// ── EXPERIENCE ─────────────────────────────────────────────
+// Add, remove, or reorder entries here
 export const EXPERIENCES = [
   {
-    "id": 1,
-    "role": "Senior Salesforce Consultant",
-    "company": "CGI",
-    "date": "Dec 2024 – Present",
-    "type": "Full-time",
-    "description": "Leading end-to-end Salesforce implementations for enterprise clients, managing the full project lifecycle from discovery and solution design to deployment and post-go-live support.",
-    "bullets": [
-      "Collaborate closely with clients to understand business objectives, gather detailed requirements, and design scalable, high-impact Salesforce solutions.",
-      "Lead end-to-end Salesforce implementations across Sales Cloud, Service Cloud, CPQ, Experience Cloud, Agentforce, and Financial Services Cloud.",
-      "Conduct workshops and deliver user training to ensure seamless system adoption and measurable business impact.",
-      "Actively contribute to RFP processes and pre-sales activities, helping secure new Salesforce projects including complex CPQ and Agentforce solutions."
+    id: 1,
+    role: "Senior Salesforce Consultant",
+    company: "Haiilo",
+    date: "Jan 2023 – Present",
+    type: "Full-time",
+    description:
+      "Leading Salesforce platform strategy and development for a global employee communications SaaS company, driving automation and AI-powered workflows.",
+    bullets: [
+      "Architected Agentforce and Einstein AI solutions to automate internal support workflows.",
+      "Built and maintained CRM Analytics dashboards for real-time business intelligence.",
+      "Led CPQ configuration and custom pricing rule development for subscription management.",
+      "Implemented Copado DevOps pipelines, improving release frequency by 50%.",
     ],
-    "tech": [
-      "Sales Cloud",
-      "Service Cloud",
-      "CPQ",
-      "Agentforce",
-      "Financial Services Cloud"
-    ],
-    "keyWin": "Secured new CPQ and Agentforce projects through strategic pre-sales and RFP contributions."
+    tech: ["Salesforce CPQ", "CRM Analytics", "Agentforce", "LWC", "Copado"],
+    keyWin: "Deployed Agentforce implementation reducing manual support tickets by 60%.",
   },
-  {
-    "id": 2,
-    "role": "Senior Salesforce Specialist",
-    "company": "Elisa Videra",
-    "date": "Jun 2022 – Dec 2024",
-    "type": "Full-time",
-    "description": "End-to-end Salesforce platform ownership for a global communications company, driving complex configuration, development, and integration across large-scale environments.",
-    "bullets": [
-      "Led solution ownership of Experience Cloud, delivering 40% improvement in customer engagement through optimized portal performance.",
-      "Automated complex business processes using Flow Builder, reducing manual data entry by 60% and accelerating approvals by 50%.",
-      "Implemented Salesforce Shield (Field Audit Trail & Platform Encryption) ensuring GDPR compliance and data security.",
-      "Developed Einstein Analytics dashboards with predictive capabilities, empowering business leaders with actionable insights.",
-      "Implemented CI/CD pipelines reducing deployment errors by 80% and shortening release cycles from bi-weekly to weekly."
-    ],
-    "tech": [
-      "Experience Cloud",
-      "Einstein Analytics",
-      "CPQ",
-      "MuleSoft",
-      "Salesforce Shield",
-      "Flow Builder"
-    ],
-    "keyWin": "Built custom Field Service Lightning solution bypassing native FSL, saving €40,000 in licensing costs."
-  },
-  {
-    "id": 3,
-    "role": "Salesforce Solution Consultant",
-    "company": "Fluido Oy",
-    "date": "May 2021 – Jun 2022",
-    "type": "Full-time",
-    "description": "Worked as a Solution Consultant handling client interaction, requirement gathering, solution design, development, deployment, user training, and workshops for end-to-end Salesforce implementations.",
-    "bullets": [
-      "Delivered end-to-end Salesforce implementations including client interaction, design, development, and deployment.",
-      "Worked on RFP processes that directly helped acquire a new CPQ project for the company.",
-      "Conducted workshops and user training sessions to drive adoption and business impact."
-    ],
-    "tech": [
-      "Salesforce CPQ",
-      "Sales Cloud",
-      "Service Cloud",
-      "Apex",
-      "LWC"
-    ],
-    "keyWin": "Won a new CPQ project for the company through successful RFP response."
-  },
-  {
-    "id": 4,
-    "role": "Senior Software Engineer",
-    "company": "Anthem Inc",
-    "date": "Oct 2020 – Mar 2021",
-    "type": "Full-time",
-    "description": "Built and enhanced Vlocity (OmniStudio) components for the Healthcare domain, developing solutions using industry-leading CRM practices within an Agile environment.",
-    "bullets": [
-      "Built and enhanced Vlocity cards, OmniScripts, DataRaptors, and Integration Procedures for Healthcare workflows.",
-      "Implemented end-to-end Lightning quick actions, LDS, Aura components, Visualforce, Apex, Batch, and LWC.",
-      "Managed requirements from PO, BA, and Product Manager for every sprint, delivering through Jira user stories.",
-      "Deployed components using AutoRabit, maintaining low-level design documents in Confluence."
-    ],
-    "tech": [
-      "OmniStudio",
-      "Vlocity",
-      "Apex",
-      "LWC",
-      "Aura",
-      "AutoRabit"
-    ],
-    "keyWin": "Delivered Healthcare-specific Vlocity solutions improving patient engagement workflows."
-  },
-  {
-    "id": 5,
-    "role": "Salesforce Administrator & Developer",
-    "company": "HappyOrNot Oy",
-    "date": "Oct 2018 – Sep 2020",
-    "type": "Full-time",
-    "description": "Managed Salesforce CPQ configuration, Service Cloud operations, and Partner Portal setup for a global customer feedback company, driving automation and user adoption.",
-    "bullets": [
-      "Configured Products, Product Rules, Price Rules, and summary variables using Salesforce CPQ.",
-      "Set up and maintained Content Management System for Partner Portal and partner user management.",
-      "Created Email Templates using Content Builder and Email Studio for order confirmation workflows.",
-      "Automated business processes with Workflows, Process Builder, and managed daily CPQ issue resolution."
-    ],
-    "tech": [
-      "Salesforce CPQ",
-      "Service Cloud",
-      "Partner Portal",
-      "Email Studio",
-      "Jitterbit"
-    ],
-    "keyWin": "Streamlined CPQ operations and partner onboarding, improving quote accuracy and sales efficiency."
-  },
-  {
-    "id": 6,
-    "role": "Salesforce CRM Analyst",
-    "company": "Autodesk Inc",
-    "date": "Apr 2016 – Aug 2018",
-    "type": "Full-time",
-    "description": "Served as Salesforce Administrator handling both configuration and customization for a global design software leader, managing deployments with Copado and driving automation.",
-    "bullets": [
-      "Created multiple Lightning Components for Quick Actions and Record Pages, enhancing user experience.",
-      "Built Push Topics to send Billing Account updates to SAP system in real-time, enabling seamless integration.",
-      "Developed Batch classes to automatically remove licenses for inactive users, optimizing license costs.",
-      "Performed daily code & configuration deployments using Copado to pre-prod and Production environments."
-    ],
-    "tech": [
-      "Lightning Components",
-      "Apex",
-      "Copado",
-      "SAP Integration",
-      "Visualforce",
-      "Data Loader"
-    ],
-    "keyWin": "Awarded Employee of the Month for automating Service Cloud workflows, achieving highest SLA compliance."
-  }
+  // Add more experience entries here following the same structure
 ];
 
-// ── CERTIFICATIONS ───────────────────────────────────────────────────
+// ── CERTIFICATIONS ─────────────────────────────────────────
 // Set highlight: true for the featured cert (shows larger)
 export const CERTS = [
-  {
-    "id": 1,
-    "name": "Administrator",
-    "issuer": "Salesforce",
-    "date": "2017",
-    "logo": "⚙️",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 2,
-    "name": "Advanced Administrator",
-    "issuer": "Salesforce",
-    "date": "2018",
-    "logo": "🔧",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 3,
-    "name": "Platform App Builder",
-    "issuer": "Salesforce",
-    "date": "2018",
-    "logo": "🏗️",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 4,
-    "name": "Platform Developer I",
-    "issuer": "Salesforce",
-    "date": "2019",
-    "logo": "👨‍💻",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 5,
-    "name": "Sales Cloud Consultant",
-    "issuer": "Salesforce",
-    "date": "2019",
-    "logo": "💼",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 6,
-    "name": "Service Cloud Consultant",
-    "issuer": "Salesforce",
-    "date": "2020",
-    "logo": "🎧",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 7,
-    "name": "Experience Cloud Consultant",
-    "issuer": "Salesforce",
-    "date": "2021",
-    "logo": "☁️",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 8,
-    "name": "Marketing Cloud Consultant",
-    "issuer": "Salesforce",
-    "date": "2021",
-    "logo": "📣",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 9,
-    "name": "Field Service Lightning Consultant",
-    "issuer": "Salesforce",
-    "date": "2022",
-    "logo": "🔩",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 10,
-    "name": "Einstein Analytics Consultant",
-    "issuer": "Salesforce",
-    "date": "2022",
-    "logo": "🤖",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 11,
-    "name": "CPQ Specialist",
-    "issuer": "Salesforce",
-    "date": "2022",
-    "logo": "💰",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 12,
-    "name": "Sharing & Visibility Architect",
-    "issuer": "Salesforce",
-    "date": "2023",
-    "logo": "🔐",
-    "verified": true,
-    "highlight": true
-  },
-  {
-    "id": 13,
-    "name": "Agentforce Specialist",
-    "issuer": "Salesforce",
-    "date": "2024",
-    "logo": "🤖",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 14,
-    "name": "Data Cloud Consultant",
-    "issuer": "Salesforce",
-    "date": "2024",
-    "logo": "📊",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 15,
-    "name": "Copado Certified DevOps Admin",
-    "issuer": "Copado",
-    "date": "2023",
-    "logo": "🚀",
-    "verified": true,
-    "highlight": false
-  },
-  {
-    "id": 16,
-    "name": "RPA UiPath Developer",
-    "issuer": "UiPath",
-    "date": "2020",
-    "logo": "⚡",
-    "verified": true,
-    "highlight": false
-  }
+  { id: 1,  name: "Administrator",                      issuer: "Salesforce",  date: "2017", logo: "⚙️",  verified: true, highlight: false },
+  { id: 2,  name: "Advanced Administrator",              issuer: "Salesforce",  date: "2018", logo: "🔧",  verified: true, highlight: false },
+  { id: 3,  name: "Platform App Builder",                issuer: "Salesforce",  date: "2018", logo: "🏗️",  verified: true, highlight: false },
+  { id: 4,  name: "Platform Developer I",                issuer: "Salesforce",  date: "2019", logo: "👨‍💻", verified: true, highlight: false },
+  { id: 5,  name: "Sales Cloud Consultant",              issuer: "Salesforce",  date: "2019", logo: "💼",  verified: true, highlight: false },
+  { id: 6,  name: "Service Cloud Consultant",            issuer: "Salesforce",  date: "2020", logo: "🎧",  verified: true, highlight: false },
+  { id: 7,  name: "Experience Cloud Consultant",         issuer: "Salesforce",  date: "2021", logo: "☁️",  verified: true, highlight: false },
+  { id: 8,  name: "Marketing Cloud Consultant",          issuer: "Salesforce",  date: "2021", logo: "📣",  verified: true, highlight: false },
+  { id: 9,  name: "Field Service Lightning Consultant",  issuer: "Salesforce",  date: "2022", logo: "🔩",  verified: true, highlight: false },
+  { id: 10, name: "Einstein Analytics Consultant",       issuer: "Salesforce",  date: "2022", logo: "🤖",  verified: true, highlight: false },
+  { id: 11, name: "Copado Certified DevOps Admin",       issuer: "Copado",      date: "2023", logo: "🚀",  verified: true, highlight: false },
+  { id: 12, name: "IBM AI & Multi Cloud",                issuer: "IBM",         date: "2023", logo: "🌐",  verified: true, highlight: false },
+  { id: 13, name: "Data Cloud Consultant",               issuer: "Salesforce",  date: "2024", logo: "📊",  verified: true, highlight: true  },
 ];
 
-// ── SKILLS ───────────────────────────────────────────────────────────
-// color uses hex values for inline styles (avoids Tailwind purge issues)
+// ── SKILLS ─────────────────────────────────────────────────
 export const SKILLS_DATA = {
   "Salesforce Ecosystem": [
-    {
-      "name": "Apex & Visualforce",
-      "level": 95,
-      "color": "#800020"
-    },
-    {
-      "name": "Lightning Web Components (LWC)",
-      "level": 90,
-      "color": "#800020"
-    },
-    {
-      "name": "Sales, Service & Experience Cloud",
-      "level": 95,
-      "color": "#800020"
-    },
-    {
-      "name": "Salesforce CPQ & Billing",
-      "level": 90,
-      "color": "#800020"
-    },
-    {
-      "name": "Flows, Process Builder & Automation",
-      "level": 98,
-      "color": "#800020"
-    },
-    {
-      "name": "CRM Analytics (Einstein Analytics)",
-      "level": 85,
-      "color": "#800020"
-    },
-    {
-      "name": "Field Service Lightning",
-      "level": 85,
-      "color": "#800020"
-    },
-    {
-      "name": "Agentforce & Einstein AI",
-      "level": 80,
-      "color": "#800020"
-    }
+    { name: "Apex & Visualforce",                           level: 95, color: "bg-salesforce" },
+    { name: "Lightning Web Components (LWC)",               level: 90, color: "bg-salesforce" },
+    { name: "Sales, Service & Experience Cloud",            level: 95, color: "bg-salesforce" },
+    { name: "Salesforce CPQ & Billing",                     level: 85, color: "bg-salesforce" },
+    { name: "Flows, Process Builder & Automation",          level: 98, color: "bg-salesforce" },
+    { name: "CRM Analytics (Einstein Analytics)",           level: 80, color: "bg-salesforce" },
+    { name: "Field Service Lightning / ServiceMax",         level: 80, color: "bg-salesforce" },
+    { name: "Agentforce & Einstein AI",                     level: 75, color: "bg-salesforce" },
   ],
   "Development & Integration": [
-    {
-      "name": "JavaScript / TypeScript",
-      "level": 85,
-      "color": "#a855f7"
-    },
-    {
-      "name": "REST / SOAP APIs",
-      "level": 92,
-      "color": "#a855f7"
-    },
-    {
-      "name": "MuleSoft Composer",
-      "level": 80,
-      "color": "#a855f7"
-    },
-    {
-      "name": "Workato (iPaaS)",
-      "level": 75,
-      "color": "#a855f7"
-    },
-    {
-      "name": "SQL / SOQL / SOSL",
-      "level": 95,
-      "color": "#a855f7"
-    },
-    {
-      "name": "Python (Data & Automation)",
-      "level": 65,
-      "color": "#a855f7"
-    },
-    {
-      "name": "OmniStudio / Vlocity",
-      "level": 80,
-      "color": "#a855f7"
-    }
+    { name: "JavaScript / TypeScript",   level: 85, color: "bg-purple-500" },
+    { name: "REST / SOAP APIs",          level: 90, color: "bg-purple-500" },
+    { name: "MuleSoft Anypoint Platform",level: 75, color: "bg-purple-500" },
+    { name: "Workato (iPaaS)",           level: 75, color: "bg-purple-500" },
+    { name: "SQL / SOQL / SOSL",         level: 95, color: "bg-purple-500" },
+    { name: "Python (Data & Automation)",level: 65, color: "bg-purple-500" },
   ],
   "Cloud & DevOps": [
-    {
-      "name": "Copado DevOps",
-      "level": 92,
-      "color": "#14b8a6"
-    },
-    {
-      "name": "SFDX & SF CLI",
-      "level": 90,
-      "color": "#14b8a6"
-    },
-    {
-      "name": "Git & Version Control",
-      "level": 90,
-      "color": "#14b8a6"
-    },
-    {
-      "name": "AutoRabit",
-      "level": 75,
-      "color": "#14b8a6"
-    },
-    {
-      "name": "ServiceNow (ITSM)",
-      "level": 70,
-      "color": "#14b8a6"
-    },
-    {
-      "name": "Power BI",
-      "level": 75,
-      "color": "#14b8a6"
-    },
-    {
-      "name": "AWS",
-      "level": 65,
-      "color": "#14b8a6"
-    }
+    { name: "Copado DevOps",      level: 90, color: "bg-teal-500" },
+    { name: "SFDX & SF CLI",      level: 90, color: "bg-teal-500" },
+    { name: "Git & Version Control",level: 90, color: "bg-teal-500" },
+    { name: "ServiceNow (ITSM)",  level: 70, color: "bg-teal-500" },
+    { name: "Power BI",           level: 75, color: "bg-teal-500" },
+    { name: "Tableau",            level: 70, color: "bg-teal-500" },
   ],
-  "Methodologies & Consulting": [
-    {
-      "name": "Agile & Scrum",
-      "level": 95,
-      "color": "#f97316"
-    },
-    {
-      "name": "Solution Architecture",
-      "level": 90,
-      "color": "#f97316"
-    },
-    {
-      "name": "Stakeholder Management",
-      "level": 92,
-      "color": "#f97316"
-    },
-    {
-      "name": "Business System Analysis",
-      "level": 88,
-      "color": "#f97316"
-    },
-    {
-      "name": "Technical Documentation",
-      "level": 85,
-      "color": "#f97316"
-    },
-    {
-      "name": "RFP & Pre-Sales",
-      "level": 85,
-      "color": "#f97316"
-    }
-  ]
+  "Methodologies": [
+    { name: "Agile & Scrum",           level: 95, color: "bg-orange-500" },
+    { name: "Solution Architecture",   level: 88, color: "bg-orange-500" },
+    { name: "Stakeholder Management",  level: 90, color: "bg-orange-500" },
+    { name: "Technical Documentation", level: 85, color: "bg-orange-500" },
+    { name: "DevOps & CI/CD",          level: 85, color: "bg-orange-500" },
+  ],
 };
 
-// ── PROJECTS ─────────────────────────────────────────────────────────
+// ── PROJECTS ───────────────────────────────────────────────
 export const PROJECTS = [
   {
-    "id": 1,
-    "title": "Custom Field Service Lightning Solution",
-    "category": "Field Service",
-    "description": "Built a custom Field Service solution using Salesforce development and AppExchange apps, bypassing native FSL licensing. Empowered field technicians with real-time data access, improved on-site issue resolution, and enhanced customer feedback collection directly in Salesforce.",
-    "outcome": "Saved project budget by €410,000 in licensing costs",
-    "tech": [
-      "Service Cloud",
-      "Apex",
-      "LWC",
-      "AppExchange",
-      "Flow Builder"
-    ],
-    "impact": "€410K saved",
-    "color": "from-blue-600/20 to-salesforce/20",
-    "icon": "🚀"
+    id: 1,
+    title: "Fuel Lightning Service Desk",
+    category: "Service Cloud",
+    description:
+      "Architected and built a complete Lightning Service Console for a global energy client, consolidating 4 legacy tools into one Salesforce-native platform.",
+    outcome: "Reduced average case resolution time by 45%",
+    tech: ["Service Cloud", "LWC", "Omni-Channel", "Apex", "REST APIs"],
+    impact: "45% faster resolution",
+    color: "from-blue-600/20 to-salesforce/20",
+    icon: "⚡",
   },
-  {
-    "id": 2,
-    "title": "ServiceNow & Majakka Integration",
-    "category": "Integration",
-    "description": "Integrated Salesforce with ServiceNow and Majakka invoicing systems using REST API and MuleSoft, streamlining invoicing and support processes. Improved data consistency and eliminated manual intervention across platforms.",
-    "outcome": "Reduced manual intervention and improved data consistency across 3 platforms",
-    "tech": [
-      "REST API",
-      "MuleSoft",
-      "ServiceNow",
-      "Salesforce",
-      "Apex"
-    ],
-    "impact": "3-platform sync",
-    "color": "from-purple-600/20 to-indigo-600/20",
-    "icon": "🔗"
-  },
-  {
-    "id": 3,
-    "title": "Salesforce CPQ Implementation for HP",
-    "category": "CPQ",
-    "description": "Delivered Salesforce CPQ automation and functionality for HP, ensuring streamlined quote-to-cash processes. Integrated Salesforce with HP partner website to automatically fetch product and pricing data, enhancing sales efficiency.",
-    "outcome": "Streamlined quote-to-cash process with automated product & pricing sync",
-    "tech": [
-      "Salesforce CPQ",
-      "REST API",
-      "Apex",
-      "Flow Builder",
-      "Partner Portal"
-    ],
-    "impact": "Automated Q2C",
-    "color": "from-green-600/20 to-teal-600/20",
-    "icon": "🛠"
-  },
-  {
-    "id": 4,
-    "title": "AI-Driven Metadata & Data Backup",
-    "category": "Innovation",
-    "description": "Designed and implemented an AI-driven solution integrating Salesforce, MuleSoft, and OpenAI's ChatGPT API. Enabled natural language-triggered metadata & data backups, improving storage efficiency, data security, and disaster recovery.",
-    "outcome": "Automated backup triggers via natural language, reducing management time significantly",
-    "tech": [
-      "Salesforce",
-      "MuleSoft",
-      "OpenAI API",
-      "Apex",
-      "REST API"
-    ],
-    "impact": "AI-powered backups",
-    "color": "from-amber-600/20 to-orange-600/20",
-    "icon": "💡"
-  },
-  {
-    "id": 5,
-    "title": "Experience Cloud Portal Optimization",
-    "category": "Experience Cloud",
-    "description": "Led end-to-end solution ownership of Salesforce Experience Cloud community portals, including customer self-service and content delivery experiences. Designed metadata-driven Lightning pages and user-centric layouts.",
-    "outcome": "40% improvement in customer engagement and 30% boost in internal task efficiency",
-    "tech": [
-      "Experience Cloud",
-      "LWC",
-      "Lightning Pages",
-      "CIAM",
-      "DAM Integration"
-    ],
-    "impact": "40% more engagement",
-    "color": "from-cyan-600/20 to-blue-600/20",
-    "icon": "☁️"
-  },
-  {
-    "id": 6,
-    "title": "Healthcare Vlocity Implementation",
-    "category": "OmniStudio",
-    "description": "Built and enhanced Vlocity cards, OmniScripts, DataRaptors, and Integration Procedures for Healthcare domain at Anthem Inc. Developed end-to-end solutions using industry best CRM practices.",
-    "outcome": "Improved patient engagement workflows and streamlined healthcare processes",
-    "tech": [
-      "OmniStudio",
-      "Vlocity",
-      "Apex",
-      "LWC",
-      "Aura",
-      "AutoRabit"
-    ],
-    "impact": "Healthcare CRM",
-    "color": "from-rose-600/20 to-pink-600/20",
-    "icon": "🏥"
-  }
+  // Add more projects here
 ];
 
-// ── TESTIMONIALS ────────────────────────────────────────────────────
+// ── TESTIMONIALS ────────────────────────────────────────────
 export const TESTIMONIALS = [
   {
-    "id": 1,
-    "quote": "To have Harish as Senior Salesforce Specialist in our Business Support team has been an excellent decision. With his technical and analytical knowledge the company benefits day after day. He managed to create a good relationship with all the different stakeholders on every level in the company. For me as manager working with him is a real pleasure, easy, clear and effective.",
-    "name": "Tom Stins",
-    "title": "Governance Manager",
-    "company": "Elisa Videra",
-    "relation": "Manager",
-    "rating": 5
+    id: 1,
+    quote:
+      "Harish is a phenomenal architect. His deep understanding of Salesforce limits and LWC design patterns saved our global rollout.",
+    name: "Sarah Jenkins",
+    title: "Director of CRM",
+    company: "Fortune 500 Manufacturing",
+    relation: "Client",
+    rating: 5,
   },
-  {
-    "id": 2,
-    "quote": "I worked with Harish in improving CRM solutions including Salesforce Sales Cloud and Hubspot CRM. We also completed together a migration project between CRM systems. His deep system knowledge and quick thinking were essential to accomplish our efforts successfully. Working with Harish was very easy, open and productive. He is a nice person and valuable contributor.",
-    "name": "Pauli Honkkila",
-    "title": "Business Transformation & Technology Consultancy",
-    "company": "Elisa Videra",
-    "relation": "Senior Colleague",
-    "rating": 5
-  },
-  {
-    "id": 3,
-    "quote": "I had the pleasure of being Harish's team lead at HappyOrNot in Finland. Harish is extremely knowledgable on so many aspects of the Salesforce matrix and I was impressed with his excellent commitment to resolving Salesforce issues alongside his passion for continually improving his Salesforce skillset. He is efficient, flexible, dedicated and thorough.",
-    "name": "Darien Scott-Hill",
-    "title": "IT Leader — Secure, Scalable & Innovative Tech Solutions",
-    "company": "HappyOrNot Oy",
-    "relation": "Team Lead",
-    "rating": 5
-  },
-  {
-    "id": 4,
-    "quote": "I highly recommend Harish for his Salesforce skills. I have found great sense of dedication, honesty and work ethics with him. This person will be a true asset for any organization.",
-    "name": "Shekhar Gadewar",
-    "title": "AI Trainer | Salesforce Trainer | AI Automation",
-    "company": "Mentor",
-    "relation": "Mentor",
-    "rating": 5
-  },
-  {
-    "id": 5,
-    "quote": "Worked with Harish for a period of time. He had exceptional knowledge in Salesforce domains and he is able to give solutions in the right manner. I would recommend him for any open positions in Salesforce.",
-    "name": "Praveen Muddana",
-    "title": "Senior Salesforce Developer",
-    "company": "Coalescence Cloud Inc",
-    "relation": "Colleague",
-    "rating": 5
-  }
+  // Add more testimonials here
 ];
 
 // ── EDUCATION ────────────────────────────────────────────────────────
