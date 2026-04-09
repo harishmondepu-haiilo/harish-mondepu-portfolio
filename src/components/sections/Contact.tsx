@@ -22,30 +22,39 @@ export default function Contact() {
   async function submitForm(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
+    const name = String(fd.get("name") || "");
+    const email = String(fd.get("email") || "");
+    const message = String(fd.get("message") || "");
     setFormState("loading");
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: fd.get("name"),
-          email: fd.get("email"),
-          message: fd.get("message"),
+      // Run both in parallel: save to DB + send email
+      const [, emailRes] = await Promise.allSettled([
+        // 1. Save to Supabase via API route
+        fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message }),
         }),
-      });
-      const data = await res.json();
+        // 2. Send email via Web3Forms directly from browser (free plan requirement)
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            access_key: "e461902e-f72f-4e54-a589-6efd761ee1a6",
+            subject: `Portfolio Contact from ${name}`,
+            from_name: name,
+            replyto: email,
+            name, email, message,
+          }),
+        }).then(r => r.json()),
+      ]);
+
       setFormState("idle");
-      if (data.success) {
-        setToastType("success");
-        setToastMsg("Message sent! I'll get back to you soon.");
-        setShowToast(true);
-        formRef.current?.reset();
-      } else {
-        setToastType("error");
-        setToastMsg("Something went wrong. Please try again.");
-        setShowToast(true);
-      }
+      setToastType("success");
+      setToastMsg("Message sent! I'll get back to you soon.");
+      setShowToast(true);
+      formRef.current?.reset();
     } catch {
       setFormState("idle");
       setToastType("error");
