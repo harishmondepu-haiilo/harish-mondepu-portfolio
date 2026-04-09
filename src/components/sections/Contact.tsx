@@ -25,24 +25,20 @@ export default function Contact() {
     setFormState("loading");
 
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "",
-          subject: "Portfolio Contact from " + fd.get("name"),
-          from_name: String(fd.get("name") || ""),
-          replyto: String(fd.get("email") || ""),
-          name: String(fd.get("name") || ""),
-          email: String(fd.get("email") || ""),
-          message: String(fd.get("message") || ""),
+          name: fd.get("name"),
+          email: fd.get("email"),
+          message: fd.get("message"),
         }),
       });
       const data = await res.json();
       setFormState("idle");
       if (data.success) {
         setToastType("success");
-        setToastMsg("Email Sent! I'll get back to you soon.");
+        setToastMsg("Message sent! I'll get back to you soon.");
         setShowToast(true);
         formRef.current?.reset();
       } else {

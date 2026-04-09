@@ -1,9 +1,4 @@
-// ============================================================
-//  PORTFOLIO CMS — Edit this file to update your portfolio
-//  No code changes needed anywhere else!
-// ============================================================
-
-// ── PERSONAL INFO ──────────────────────────────────────────────────────
+// Auto-generated from content.json — do not edit directly
 export const PERSONAL = {
   "name": "Harish Mondepu",
   "title": "Senior Salesforce Consultant",
@@ -20,7 +15,7 @@ export const PERSONAL = {
     "As a trusted consultant, I bridge the gap between business strategy and technical execution — championing DevOps with Copado, driving AI-powered automation with Einstein & Agentforce, and ensuring every implementation is built for compliance, performance, and long-term scalability."
   ],
   "email": "harimba963@gmail.com",
-  "location": "Bangalore, India",
+  "location": "Bangalore, India · Finland",
   "linkedin": "https://linkedin.com/in/harish-m-49950b168",
   "github": "https://github.com/harishmondepu",
   "trailhead": "https://trailhead.salesforce.com/en/me/harishmondepu",
@@ -30,8 +25,6 @@ export const PERSONAL = {
     "projects": 25
   }
 };
-
-// ── EXPERIENCE ───────────────────────────────────────────────────────
 export const EXPERIENCES = [
   {
     "id": 1,
@@ -169,9 +162,6 @@ export const EXPERIENCES = [
     "keyWin": "Awarded Employee of the Month for automating Service Cloud workflows, achieving highest SLA compliance."
   }
 ];
-
-// ── CERTIFICATIONS ───────────────────────────────────────────────────
-// Set highlight: true for the featured cert (shows larger)
 export const CERTS = [
   {
     "id": 1,
@@ -354,9 +344,6 @@ export const CERTS = [
     "highlight": false
   }
 ];
-
-// ── SKILLS ───────────────────────────────────────────────────────────
-// color uses hex values for inline styles (avoids Tailwind purge issues)
 export const SKILLS_DATA = {
   "Salesforce Ecosystem": [
     {
@@ -507,8 +494,6 @@ export const SKILLS_DATA = {
     }
   ]
 };
-
-// ── PROJECTS ─────────────────────────────────────────────────────────
 export const PROJECTS = [
   {
     "id": 1,
@@ -614,8 +599,6 @@ export const PROJECTS = [
     "icon": "🏥"
   }
 ];
-
-// ── TESTIMONIALS ────────────────────────────────────────────────────
 export const TESTIMONIALS = [
   {
     "id": 1,
@@ -663,8 +646,6 @@ export const TESTIMONIALS = [
     "rating": 5
   }
 ];
-
-// ── EDUCATION ────────────────────────────────────────────────────────
 export const EDUCATION = [
   {
     "degree": "MBA (IT & Marketing)",
@@ -677,8 +658,6 @@ export const EDUCATION = [
     "year": "2014"
   }
 ];
-
-// ── ACHIEVEMENTS ──────────────────────────────────────────────────────
 export const ACHIEVEMENTS = [
   {
     "title": "Custom FSL Solution — €40K Saved",
