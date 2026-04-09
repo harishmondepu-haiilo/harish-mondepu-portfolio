@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Providers from "@/components/Providers";
 import "./globals.css";
-import FlyingAnimations from "@/components/animations/FlyingAnimations";
 
 export const metadata: Metadata = {
   title: "Harish Mondepu | Salesforce Engineer",
@@ -20,8 +20,7 @@ export default function RootLayout({
       <body
         className={`antialiased min-h-screen bg-background text-foreground overflow-x-hidden selection:bg-salesforce/30`}
       >
-        <FlyingAnimations />
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
