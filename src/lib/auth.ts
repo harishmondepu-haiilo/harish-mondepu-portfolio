@@ -1,10 +1,8 @@
 import { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import bcrypt from "bcryptjs";
 
-// Load default admin credentials from env. In production, these should be properly secured.
 const ADMIN_EMAIL = process.env.ADMIN_EMAIL || "admin@harish.dev";
-const ADMIN_PASSWORD_HASH = process.env.ADMIN_PASSWORD_HASH || bcrypt.hashSync("Laksh@123", 10);
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "Laksh@123";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -19,19 +17,15 @@ export const authOptions: NextAuthOptions = {
           return null;
         }
 
-        if (credentials.email === ADMIN_EMAIL) {
-          const isValid = await bcrypt.compare(credentials.password, ADMIN_PASSWORD_HASH);
-          
-          if (isValid) {
-            return {
-              id: "admin-1",
-              name: "Harish Admin",
-              email: ADMIN_EMAIL,
-              role: "admin",
-            };
-          }
+        if (credentials.email === ADMIN_EMAIL && credentials.password === ADMIN_PASSWORD) {
+          return {
+            id: "admin-1",
+            name: "Harish Admin",
+            email: ADMIN_EMAIL,
+            role: "admin",
+          };
         }
-        
+
         return null;
       },
     }),
