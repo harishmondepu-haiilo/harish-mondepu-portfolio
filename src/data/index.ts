@@ -325,6 +325,33 @@ export const CERTS = [
     "logo": "⚙️",
     "verified": true,
     "highlight": true
+  },
+  {
+    "id": 18,
+    "name": "Google AI Essentials",
+    "issuer": "Google",
+    "date": "2026",
+    "logo": "⚙️",
+    "verified": true,
+    "highlight": true
+  },
+  {
+    "id": 19,
+    "name": "Microsoft Azure 900",
+    "issuer": "Microsoft",
+    "date": "2026",
+    "logo": "⚙️",
+    "verified": true,
+    "highlight": false
+  },
+  {
+    "id": 20,
+    "name": "Anthropic AI Professional",
+    "issuer": "Anthropic",
+    "date": "2026",
+    "logo": "⚙️",
+    "verified": true,
+    "highlight": false
   }
 ];
 
