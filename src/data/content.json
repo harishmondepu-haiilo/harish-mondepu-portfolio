@@ -673,6 +673,11 @@
       "title": "AI-Driven Backup Innovation",
       "description": "Designed and developed an AI-driven Salesforce metadata and data backup solution integrating MuleSoft and OpenAI's ChatGPT API for automated disaster recovery.",
       "company": "Innovation Project"
+    },
+    {
+      "title": "Salesforce Attachments Extraction Tool",
+      "description": "Designed and developed an attachment extraction utility that enables users to retrieve files from targeted objects based on defined filter criteria. The tool organizes the extracted attachments into record-specific directories on the local file system, ensuring structured and easily accessible data storage.",
+      "company": "Innovation Project "
     }
   ]
 }
