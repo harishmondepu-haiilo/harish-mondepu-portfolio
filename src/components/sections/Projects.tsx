@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, MonitorPlay } from "lucide-react";
+import { ExternalLink, MonitorPlay } from "lucide-react";
 
-const CATEGORIES = ["All", "Salesforce", "Integration", "Innovation"];
+const CATEGORIES = ["All", "Salesforce", "Integration", "Innovation", "AI"];
 
 const PROJECTS = [
   {
@@ -15,7 +15,8 @@ const PROJECTS = [
     impact: "Saved project budget by €410,000 in licensing costs",
     tech: ["Service Cloud", "Apex", "LWC", "AppExchange", "Flow Builder"],
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-    size: "large"
+    size: "large",
+    liveUrl: ""
   },
   {
     id: 2,
@@ -25,7 +26,8 @@ const PROJECTS = [
     impact: "Reduced manual intervention across 3 platforms",
     tech: ["REST API", "MuleSoft", "ServiceNow", "Salesforce", "Apex"],
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800",
-    size: "large"
+    size: "large",
+    liveUrl: ""
   },
   {
     id: 3,
@@ -35,7 +37,8 @@ const PROJECTS = [
     impact: "Automated quote-to-cash with real-time pricing sync",
     tech: ["Salesforce CPQ", "REST API", "Apex", "Flow Builder", "Partner Portal"],
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800",
-    size: "small"
+    size: "small",
+    liveUrl: ""
   },
   {
     id: 4,
@@ -45,7 +48,8 @@ const PROJECTS = [
     impact: "AI-powered backups via natural language",
     tech: ["Salesforce", "MuleSoft", "OpenAI API", "Apex", "REST API"],
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
-    size: "small"
+    size: "small",
+    liveUrl: ""
   },
   {
     id: 5,
@@ -55,7 +59,8 @@ const PROJECTS = [
     impact: "40% improvement in customer engagement",
     tech: ["Experience Cloud", "LWC", "Lightning Pages", "CIAM", "DAM"],
     image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800",
-    size: "small"
+    size: "small",
+    liveUrl: ""
   },
   {
     id: 6,
@@ -65,7 +70,30 @@ const PROJECTS = [
     impact: "Improved patient engagement workflows",
     tech: ["OmniStudio", "Vlocity", "Apex", "LWC", "Aura", "AutoRabit"],
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=800",
-    size: "small"
+    size: "small",
+    liveUrl: ""
+  },
+  {
+    id: 7,
+    title: "AI Engineer Roadmap — 62-Module Curriculum",
+    category: "AI",
+    description: "Built a full 26-week, 9-phase AI Engineer curriculum website covering Python, LLMs, Prompt Engineering, RAG, Agents, MCP, Multi-Agent Orchestration, LLMOps, and Cloud Deployment. 62 standalone HTML modules with a React SPA, dark/light theme, scroll-reveal animations, and a capstone project building a production RAG + agent app.",
+    impact: "62 modules complete — from Python basics to multi-agent systems",
+    tech: ["React", "HTML/CSS", "JavaScript", "Claude API", "Vercel"],
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800",
+    size: "large",
+    liveUrl: "https://ai-engineer-roadmap-pi.vercel.app/"
+  },
+  {
+    id: 8,
+    title: "IKEA KALLAX AI Support Webapp",
+    category: "AI",
+    description: "Demo product support page for IKEA KALLAX with a live RAG chatbot powered by Flowise, Pinecone, and Groq. Answers real product questions from a PDF knowledge base using vector search. Also embedded as an LWC component in a Salesforce Experience Cloud site.",
+    impact: "Live RAG chatbot + Salesforce Experience Cloud integration",
+    tech: ["Flowise", "RAG", "Pinecone", "Groq", "LWC", "Salesforce EC"],
+    image: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&q=80&w=800",
+    size: "small",
+    liveUrl: "https://ikea-assistant.vercel.app"
   }
 ];
 
@@ -148,12 +176,15 @@ export default function Projects() {
                       {project.category}
                     </span>
                     <div className="flex gap-2 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                      <a href="#" className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-salesforce text-white transition-colors">
-                        <MonitorPlay size={18} />
-                      </a>
-                      <a href="#" className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-gray-700 text-white transition-colors">
-                        <Github size={18} />
-                      </a>
+                      {project.liveUrl ? (
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-salesforce text-white transition-colors">
+                          <ExternalLink size={18} />
+                        </a>
+                      ) : (
+                        <span className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center text-white/30 cursor-default">
+                          <MonitorPlay size={18} />
+                        </span>
+                      )}
                     </div>
                   </div>
 
