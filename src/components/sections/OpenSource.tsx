@@ -16,6 +16,7 @@ const REPOS = [
     license: "MIT",
     topics: ["salesforce", "python", "content-version", "bulk-export", "tkinter"],
     url: "https://github.com/harish3699/Salesforce-File-Extractor",
+    liveUrl: "",
     featured: true,
     version: "v1.0 · Apr 2026",
   },
@@ -25,12 +26,13 @@ const REPOS = [
     name: "ai-engineer-roadmap",
     description:
       "26-week · 9-phase · 62-module AI engineering curriculum. Covers Python, LLMs, Prompt Engineering, RAG, Agents, MCP, Multi-Agent Orchestration, LLMOps, and Cloud Deployment — with a capstone project building a production RAG + agent app.",
-    impact: "Live at ai-engineer-roadmap-pi.vercel.app",
+    impact: "62 modules complete — Python to production multi-agent systems",
     language: "JavaScript",
     languageColor: "#f1e05a",
     license: null,
     topics: ["ai", "llm", "rag", "agents", "mcp", "curriculum", "react", "vercel"],
     url: "https://github.com/harish3699/ai-engineer-roadmap",
+    liveUrl: "https://ai-engineer-roadmap-pi.vercel.app/",
     featured: true,
     version: "v1.0 · May 2026",
   },
@@ -40,12 +42,13 @@ const REPOS = [
     name: "ikea-ai-assistant",
     description:
       "KALLAX AI Support webapp — RAG chatbot powered by Flowise, Pinecone, and Groq. Answers real product questions from a PDF knowledge base using vector search. Also embedded as an LWC component in a Salesforce Experience Cloud site.",
-    impact: "Live demo at ikea-assistant.vercel.app",
+    impact: "Live RAG chatbot + Salesforce Experience Cloud integration",
     language: "HTML",
     languageColor: "#e34c26",
     license: null,
     topics: ["rag", "flowise", "pinecone", "groq", "salesforce-ec", "lwc", "vercel"],
     url: "https://github.com/harish3699/ikea-ai-assistant",
+    liveUrl: "https://ikea-assistant.vercel.app",
     featured: false,
     version: "v1.0 · May 2026",
   },
@@ -93,17 +96,14 @@ export default function OpenSource() {
         {/* Repo cards */}
         <div className="flex flex-col gap-6 max-w-3xl mx-auto">
           {REPOS.map((repo, i) => (
-            <motion.a
+            <motion.div
               key={repo.id}
-              href={repo.url}
-              target="_blank"
-              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               whileHover={{ y: -4 }}
-              className="group relative block rounded-3xl border border-white/10 bg-white/5 hover:border-salesforce/50 backdrop-blur-sm overflow-hidden transition-colors duration-300"
+              className="group relative rounded-3xl border border-white/10 bg-white/5 hover:border-salesforce/50 backdrop-blur-sm overflow-hidden transition-colors duration-300"
             >
               {/* Top accent bar */}
               <div className="h-px w-full bg-gradient-to-r from-transparent via-salesforce/60 to-transparent" />
@@ -196,11 +196,35 @@ export default function OpenSource() {
                     {repo.version}
                   </span>
                 </div>
+
+                {/* Action buttons */}
+                <div className="flex items-center gap-3 mt-5">
+                  <a
+                    href={repo.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:border-white/30 text-gray-300 hover:text-white text-xs font-medium transition-all duration-200"
+                  >
+                    <Github size={13} />
+                    View on GitHub
+                  </a>
+                  {repo.liveUrl && (
+                    <a
+                      href={repo.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-4 py-2 rounded-xl bg-salesforce/10 border border-salesforce/30 hover:bg-salesforce/20 text-salesforce text-xs font-medium transition-all duration-200"
+                    >
+                      <ExternalLink size={13} />
+                      Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
 
               {/* Hover glow */}
               <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none bg-[radial-gradient(ellipse_at_top_left,rgba(128,0,32,0.08),transparent_60%)]" />
-            </motion.a>
+            </motion.div>
           ))}
         </div>
 
